@@ -4,11 +4,17 @@ title: "AM1 reproducibility package for Resilience-Oriented Design of Distribute
 type: software
 version: 1.0.1
 date-released: 2026-11-03
+doi: "10.5281/zenodo.23931297"
+url: "https://doi.org/10.5281/zenodo.23931297"
 authors:
   - family-names: Pohorielov
     given-names: Stanislav V.
+    orcid: "https://orcid.org/0000-0002-0189-8655"
+    affiliation: 'National Technical University "Kharkiv Polytechnic Institute"'
   - family-names: Yanovskyi
     given-names: Oleksii V.
+    orcid: "https://orcid.org/0009-0002-4310-2843"
+    affiliation: 'National Technical University "Kharkiv Polytechnic Institute"'
 repository-code: "https://github.com/svpog/am1-distributed-am-resilience"
 keywords:
   - distributed additive manufacturing

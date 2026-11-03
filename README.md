@@ -1,5 +1,7 @@
 # AM1 reproducibility package v1.0.1
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23931297.svg)](https://doi.org/10.5281/zenodo.23931297)
+
 This archive accompanies the revised manuscript **“Resilience-Oriented Design of Distributed Additive Manufacturing Networks”** by Stanislav V. Pohorielov and Oleksii V. Yanovskyi.
 
 Version 1.0.1 is a metadata-only successor to version 1.0.0, published after enabling Zenodo preservation. The scientific payload, code, configuration and simulation results are unchanged.
@@ -108,7 +110,9 @@ Both run metadata files report `git_dirty=false`; therefore, the production outp
 
 ## Citation and license note
 
-Suggested citation metadata are supplied in `CITATION.cff`. A DOI has not yet been assigned. The authors retain copyright in the code, data, text, and figures until a repository license is selected; reuse beyond verification and peer review requires their permission.
+Suggested citation metadata are supplied in `CITATION.cff`. The version-specific archived release is available at [https://doi.org/10.5281/zenodo.23931297](https://doi.org/10.5281/zenodo.23931297); the concept DOI for all versions is [https://doi.org/10.5281/zenodo.23931296](https://doi.org/10.5281/zenodo.23931296).
+
+Copyright © 2026 Stanislav V. Pohorielov and Oleksii V. Yanovskyi. All rights reserved. The materials may be used for verification and peer review. Any further reuse, redistribution, modification, or commercial use requires prior written permission from the authors.
 
 ## Contact
 
