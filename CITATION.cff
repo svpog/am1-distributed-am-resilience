@@ -3,13 +3,13 @@ message: "If you use this AM1 code or dataset, please cite the accompanying manu
 title: "AM1 reproducibility package for Resilience-Oriented Design of Distributed Additive Manufacturing Networks"
 type: software
 version: 1.0.0
-date-released: 2026-11-02
+date-released: 2026-11-03
 authors:
   - family-names: Pohorielov
     given-names: Stanislav V.
   - family-names: Yanovskyi
     given-names: Oleksii V.
-repository-code: "https://github.com/svpog/yanovskyi-phd-resilience"
+repository-code: "https://github.com/svpog/am1-distributed-am-resilience"
 keywords:
   - distributed additive manufacturing
   - supply network resilience
