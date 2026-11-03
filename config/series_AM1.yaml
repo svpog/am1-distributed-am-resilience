@@ -1,0 +1,58 @@
+series: AM1
+description: "Paired AM-specific resilience experiment for distributed additive manufacturing"
+
+architectures:
+  - A0_baseline
+  - A1_feedstock
+  - A2_cross_qualification
+  - A3_downstream
+  - A4_digital
+  - A5_balanced
+
+disruptions:
+  - D1_printer_random
+  - D2_feedstock_targeted
+  - D3_postprocess_targeted
+  - D4_digital_outage
+  - D5_regional_cluster
+
+disruption:
+  printer_failure_fraction: 0.20
+
+recovery:
+  strategy: flow_greedy_am
+  mu: 1
+
+simulation:
+  T_max: 50
+  Q_target_frac: 0.95
+
+metrics:
+  alpha_cvar: 0.10
+  bootstrap_B: 2000
+
+plans:
+  smoke:
+    scale: AM1-A
+    N: 50
+    n_runs: 5
+    seed_start: 910000
+    architectures:
+      - A5_balanced
+    disruptions:
+      - D4_digital_outage
+  calibration:
+    scale: AM1-A
+    N: 50
+    n_runs: 30
+    seed_start: 911000
+  am1a:
+    scale: AM1-A
+    N: 50
+    n_runs: 400
+    seed_start: 920000
+  am1b:
+    scale: AM1-B
+    N: 80
+    n_runs: 100
+    seed_start: 930000

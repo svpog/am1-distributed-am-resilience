@@ -1,0 +1,44 @@
+AM1 STATISTICAL REPORT
+======================
+Primary endpoint: lower-tail CVaR alpha=0.10
+Paired bootstrap replicates: B=2000
+Secondary test: two-sided paired Wilcoxon with Holm correction within scale and disruption.
+
+INTEGRITY
+Valid observations: 15000
+Non-recovered share (all cells): 0.0000
+
+H1: SCENARIO ALIGNMENT
+AM1-A D2_feedstock_targeted: expected A1_feedstock; observed best A1_feedstock; status=SUPPORTED; aligned delta=+0.000479.
+AM1-A D3_postprocess_targeted: expected A3_downstream; observed best A3_downstream; status=SUPPORTED; aligned delta=+0.000152.
+AM1-A D4_digital_outage: expected A4_digital; observed best A1_feedstock; status=SUPPORTED; aligned delta=+0.000000.
+AM1-B D2_feedstock_targeted: expected A1_feedstock; observed best A1_feedstock; status=SUPPORTED; aligned delta=+0.000430.
+AM1-B D3_postprocess_targeted: expected A3_downstream; observed best A1_feedstock; status=NOT_SUPPORTED; aligned delta=-0.000298.
+AM1-B D4_digital_outage: expected A4_digital; observed best A4_digital; status=SUPPORTED; aligned delta=+0.002392.
+
+H2: BALANCED MAXIMIN
+AM1-A: A5 maximin=-0.013961; best=A1_feedstock (+0.000000); status=NOT_SUPPORTED.
+AM1-B: A5 maximin=-0.016712; best=A1_feedstock (+0.000000); status=NOT_SUPPORTED.
+
+H3: DEPENDENCY SPECIFICITY
+PARTIALLY SUPPORTED. Directly aligned redundancy led the D2 result at both scales; digital backup led D4 only at N=80, while the N=50 lower tail was unchanged; downstream redundancy led D3 at N=50 but not N=80. The data therefore support mechanism specificity, but also show threshold and scale dependence.
+Aligned H1 components supported: 5/6.
+
+H4: DIRECTIONAL SCALE STABILITY
+Signs preserved for 23/25 effects (92.0%).
+D1_printer_random: 5/5 signs; Spearman r=1.000.
+D2_feedstock_targeted: 5/5 signs; Spearman r=0.900.
+D3_postprocess_targeted: 4/5 signs; Spearman r=0.368.
+D4_digital_outage: 4/5 signs; Spearman r=undefined (ties).
+D5_regional_cluster: 5/5 signs; Spearman r=1.000.
+
+INTERPRETATION
+Effect magnitudes are small because baseline resilience is already high under the fixed flow-greedy recovery policy. Structural redundancy is not uniformly beneficial: relations that do not bypass the disrupted dependency can be neutral, and the balanced allocation can dilute the budget below a useful scenario-specific threshold. All null and adverse effects were retained.
+
+Selected paired effects:
+AM1-A D2_feedstock_targeted A1_feedstock: delta CVaR=+0.000479, 95% CI [+0.000335, +0.000643], rank-biserial=+1.000, Holm p=1.68e-63.
+AM1-A D3_postprocess_targeted A3_downstream: delta CVaR=+0.000152, 95% CI [-0.000138, +0.000447], rank-biserial=+0.942, Holm p=3.484e-59.
+AM1-A D4_digital_outage A4_digital: delta CVaR=+0.000000, 95% CI [+0.000000, +0.000866], rank-biserial=+1.000, Holm p=3.342e-65.
+AM1-B D2_feedstock_targeted A1_feedstock: delta CVaR=+0.000430, 95% CI [+0.000254, +0.001557], rank-biserial=+1.000, Holm p=8.399e-17.
+AM1-B D3_postprocess_targeted A3_downstream: delta CVaR=-0.000298, 95% CI [-0.000964, +0.000339], rank-biserial=+0.934, Holm p=2.51e-15.
+AM1-B D4_digital_outage A4_digital: delta CVaR=+0.002392, 95% CI [+0.001383, +0.003345], rank-biserial=+1.000, Holm p=2.038e-17.

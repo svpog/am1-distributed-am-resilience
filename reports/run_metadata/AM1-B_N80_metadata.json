@@ -1,0 +1,13 @@
+{
+  "series": "AM1",
+  "plan": "am1b",
+  "run_label": "am1b-m100-20261003",
+  "created_utc": "2026-10-03T19:08:12.948463+00:00",
+  "git_commit": "89ab5aeb08b35e1283f5d3cd5694ced295c4ee06",
+  "git_dirty": false,
+  "config_hash": "c9b9f3555713dbe83b841fab6d868c487ab251215bf413ba08cccd9f5e29b4f8",
+  "n_raw_rows": 3000,
+  "n_q_rows": 153000,
+  "elapsed_seconds": 253.54228887500358,
+  "output_root": "/Users/stanislavpohorielov/.codex/.chatgpt-projects/g-p-69f87bf135d48191b28523c568d817ca/am1_worktree/results"
+}

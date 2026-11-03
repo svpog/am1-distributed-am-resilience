@@ -1,0 +1,9 @@
+hypothesis,scale,component,expected_architecture,observed_best,expected_delta_cvar,best_delta_cvar,status
+H1,AM1-A,D2_feedstock_targeted,A1_feedstock,A1_feedstock,0.0004794091185994498,0.0004794091185994498,SUPPORTED
+H1,AM1-A,D3_postprocess_targeted,A3_downstream,A3_downstream,0.00015196347645451969,0.00015196347645451969,SUPPORTED
+H1,AM1-A,D4_digital_outage,A4_digital,A1_feedstock,0.0,0.0,SUPPORTED
+H2,AM1-A,maximin_across_disruptions,A5_balanced,A1_feedstock,-0.013961133748439658,0.0,NOT_SUPPORTED
+H1,AM1-B,D2_feedstock_targeted,A1_feedstock,A1_feedstock,0.00043037426363568,0.00043037426363568,SUPPORTED
+H1,AM1-B,D3_postprocess_targeted,A3_downstream,A1_feedstock,-0.0002977227129852267,0.0,NOT_SUPPORTED
+H1,AM1-B,D4_digital_outage,A4_digital,A4_digital,0.002391782646178342,0.002391782646178342,SUPPORTED
+H2,AM1-B,maximin_across_disruptions,A5_balanced,A1_feedstock,-0.016711598968036312,0.0,NOT_SUPPORTED
