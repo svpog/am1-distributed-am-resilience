@@ -1,6 +1,8 @@
-# AM1 reproducibility package v1.0.0
+# AM1 reproducibility package v1.0.1
 
 This archive accompanies the revised manuscript **“Resilience-Oriented Design of Distributed Additive Manufacturing Networks”** by Stanislav V. Pohorielov and Oleksii V. Yanovskyi.
+
+Version 1.0.1 is a metadata-only successor to version 1.0.0, published after enabling Zenodo preservation. The scientific payload, code, configuration and simulation results are unchanged.
 
 It contains the isolated AM1 simulation code, fixed configuration, deterministic seed policy, complete raw outputs for 15,000 simulations, aggregated tables, statistical report, and publication figures. No outputs from the authors' earlier experimental series are included or modified.
 
